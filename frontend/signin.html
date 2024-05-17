@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login & Sign up</title>
+	<link rel="stylesheet" href="stylesignin.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Quicksand&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="side-panel">
+			<img src="./images/login.svg">
+		</div>
+		<div class="forms-container">
+			<div class="lform">
+				<form action="./main.html" id="login" method="post">
+					<h2>Login</h2>
+					<div><input type="email" placeholder="Email" name="le" required ></div>
+					<div><input type="password" placeholder="Password" name="lp" required></div>
+					<div><input type="submit" value="Login" class="btn"></div>
+					<a href="#register">Don't have an account? Sign up</a>
+				</form>
+			</div>
+			<div class="rform">
+				<form action="./main.html" id="register" method="post">
+					<h2>Register</h2>
+					<div><input type="text" placeholder="Username" name="ru" required></div>
+					<div><input type="email" placeholder="Email" name="re" required ></div>
+					<div><input type="password" placeholder="Password" name="rp" required></div>
+					<div><a href="./main.html"></a><input type="submit" value="Register" class="btn"></div>
+					<a href="#login">Have an account already? Login here</a>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="scr.js"></script>
+</body>
+
+</html>
